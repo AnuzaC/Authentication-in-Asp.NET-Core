@@ -59,6 +59,7 @@ namespace Authentication
             //};
 
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IExcelRepository, ExcelRepository>();
             //services.AddSingleton<AppSettings>(appSettingsSection);
             //-----------JWT Authentication-------------
             var appkey = appSettingsSection.Get<AppSettings>();
